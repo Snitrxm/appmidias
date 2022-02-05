@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %} Register {% endblock %}
+
+{% block content %}
+
+
+<div class="containerRegister">
+  <form action="" method="post">
+    {% include 'components/notification.html' %}
+    {{form.csrf_token}}
+    <h1>Register</h1>
+      <div class="insideContainerRegister">
+        <label for="exampleInputEmail1" class="form-label">Name</label>
+        {{form.name(class_="input")}}
+        <label for="exampleInputEmail1" class="form-label">Username</label>
+        {{form.username(class_="input")}}
+        <label for="exampleInputEmail1" class="form-label">Email</label>
+        {{form.email(class_="input")}}
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        {{form.password(class_="input")}}
+        {{form.submit(class_='submitButton')}}
+      </div>
+</div>
+</form>
+
+
+{% endblock %}

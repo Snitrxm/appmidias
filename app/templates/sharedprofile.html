@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %} Shared Profile {% endblock %}
+
+{% block content %}
+
+<head>
+    <script async src="https://api.countapi.xyz/hit/appmidias.herokuapp.com/0cd0d750-c027-4e0c-851f-dc222ac63251?callback=websiteVisits"></script>
+</head>
+
+<div class="containerSharedprofile">
+    <ul>
+        <li>
+            <h2>Facebook url of {{name}} is <a target="_blank" href="{{socialmidias.facebook}}">{{socialmidias.facebook}}</a></h2>
+        </li>
+        <li>
+            <h2>Linkedin url of {{name}} is <a target="_blank" href="{{socialmidias.linkedin}}">{{socialmidias.linkedin}}</a></h2>
+        </li>
+    </ul>
+    <h2 class="counter">This page has been visited <span id="visits"></span> times.</h2>
+    <a class='mainMenu' href="{{url_for('main')}}">Main Menu</a>
+</div>
+
+
+
+<script>
+    function websiteVisits(response){
+        document.querySelector("#visits").textContent = response.value;
+    }
+</script>
+
+
+
+{% endblock %}

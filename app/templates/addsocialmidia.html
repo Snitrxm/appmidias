@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %} Social Midias {% endblock %}
+
+{% block content %}
+
+<div class="containerAddsocialmidias">
+    <form action="" method="post">
+        {% include 'components/notification.html' %}
+        
+        {{form.csrf_token}}
+        <h1>Add Social Midias</h1>
+        <div class="insideContainerAddsocialmidias">
+            <label for="">Facebook url</label>
+            {{form.facebook_url(class_='input')}}
+            <label for="">Linkedin Url</label>
+            {{form.linkedin_url(class_='input')}}
+            {{form.submit(class_='submitButton')}}
+        </div>
+    </form>
+</div>
+
+
+{% endblock %}

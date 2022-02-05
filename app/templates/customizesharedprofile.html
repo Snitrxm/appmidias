@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %} Customize Shared Profile {% endblock %}
+
+{% block content %}
+
+
+<form action="{{url_for('customizesharedprofile')}}" method="post">
+    <h2>Select what you want to share</h2>
+
+    <label for="">Facebook url</label>
+    <input type="checkbox" name="facebook_url" checked value = "on">
+    <br><br>
+    <label for="">Linkedin url</label>
+    <input type="checkbox" name="linkedin_url" checked value = 'on'>
+    <br><br><br>
+    <input type="submit">
+</form>
+
+<a href="{{url_for('main')}}">Main</a>
+
+
+{% endblock %}

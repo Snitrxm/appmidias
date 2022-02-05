@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title %} Social Midias {% endblock %}
+
+{% block content %}
+
+<div class="containerSocialmidias">
+    <ul>
+        <li>
+            {% if socialmidias.facebook == '' or socialmidias.facebook == Empty %}
+            <h2>You dont have a facebook still </h2>
+            <h3>You can add <a href="{{url_for('addsocialmidias')}}">here</a></h3>
+            {% else %}
+            <h2>Your Facebook is <a target = "_blank" href="{{socialmidias.facebook}}">{{socialmidias.facebook}}</a></h2>
+            <a class ='buttonsFunction' href="{{url_for('deletefacebook')}}">Delete</a>
+            <a class ='buttonsFunction' href="{{url_for('updatefacebook')}}">Update</a>
+            {% endif %}
+    
+        </li>
+        <li>
+            {% if socialmidias.linkedin == '' or socialmidias.linkedin == Empty %}
+            <h2>You dont have a linkedin still </h2>
+            <h3>You can add <a href="{{url_for('addsocialmidias')}}">here</a></h3>
+            {% else %}
+            <h2>Your Linkedin is <a target = "_blank" href="{{socialmidias.linkedin}}">{{socialmidias.linkedin}}</a></h2>
+            <a class ='buttonsFunction' href="{{url_for('deletelinkedin')}}">Delete</a>
+            <a class ='buttonsFunction' href="{{url_for('updatelinkedin')}}">Update</a>
+            {% endif %}
+        </li>
+    </ul>
+    <a class='mainMenu' href="{{url_for('main')}}">Main Menu</a>
+</div>
+
+
+
+
+
+{% endblock %}

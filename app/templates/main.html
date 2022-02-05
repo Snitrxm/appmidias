@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block title %} Main {% endblock %}
+
+{% block content %}
+
+
+
+<div class="containerMain">
+    <h1>Welcome Again <span>{{name}}</span></h1>
+    <p>Once you are logged in</p>
+    <hr style="width:50%; margin-left:25% !important; margin-right:25% !important;">
+    <div class="insideContainerMain">
+        
+        {% if socialmidias == None %}
+        <a href="{{url_for('addsocialmidias')}}">Add your social Midias</a><br><br>
+        {% else %}
+        
+        {% endif %}
+        
+        {% if socialmidias == None %}
+        
+        {% else %}
+        
+        <a href="{{url_for('socialmidias')}}">View Yours Social Midias</a><br><br>
+        
+        <a href="{{url_for('sharedprofile', username = session['username'])}}">View Shared Profile</a><br><br>
+        
+        <a href="{{url_for('shareprofile')}}">Share Profile</a><br><br>
+        
+        {% endif %}
+        
+        
+        
+        
+        <a href="{{url_for('auth.logout')}}">Logout</a>
+    
+    </div>
+    
+    <footer>
+        <span><span class="madeby">Made by</span> <a target="_blank" href="https://twitter.com/Snitrxxm">Snitram</a></span>
+    </footer>
+</div>
+
+
+
+
+{% endblock %}

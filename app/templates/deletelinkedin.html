@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %} Delete Linkedin {% endblock %}
+
+{% block content %}
+
+
+<div class="containerDeletelinkedin"> 
+  <form action="" method="post">
+      {% include 'components/notification.html' %}
+      {{form.csrf_token}}
+      <label for="">Please enter your linkedin url to confirm </label>
+      {{form.url(class_='urlLinkedin')}}
+      {{form.submit(class_='submitButtonLinkedin')}}
+  
+    </form>
+</div>
+
+
+{% endblock %}

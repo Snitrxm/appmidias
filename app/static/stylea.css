@@ -1,0 +1,794 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: #5B6EA6;
+}
+
+
+ /* Index Page */
+
+.containerIndex{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: white;
+    max-width: 600px;
+    height: 400px;
+    border-radius: 5px;
+
+}
+
+.containerIndex h1{
+    text-align: center;
+    padding: 10px;
+}
+
+.containerIndex h3{
+    text-align: center;
+}
+
+.containerIndex a{
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin: 20px;
+    border: 1px solid #2E2D40;
+    border-radius: 5px;
+    padding: 10px;
+    color: #2E2D40;
+}
+
+.containerIndex a:hover{
+    background-color: rgb(128, 202, 226);
+    color: white;
+}
+
+.insideContainerIndex{
+    width: 260px;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+}
+
+/* Login page */
+
+.containerLogin{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: white;
+    max-width: 700px;
+    height: 500px;
+    border-radius: 5px;
+}
+
+.insideContainerLogin{
+    width: 380px;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+}
+
+.containerLogin #loginTitle{
+    display: block;
+    text-align: center;
+    padding: 8px;
+}
+
+
+
+.insideContainerLogin label{
+    display: block;   
+}
+
+.insideContainerLogin .input{
+    width: 350px;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 5px;
+    margin: 10px 0px;
+}
+
+.submitButton{
+    display: block;
+    width: 350px;
+    margin: 10px 0px;
+    background-color: lightblue;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.submitButton:hover{
+    background-color: rgb(128, 202, 226);
+    color: white;
+}
+
+.registerButton{
+    display: block;
+    text-align: center;
+    background-color: lightblue;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    width: 350px;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+
+.registerButton:hover{
+    background-color: rgb(128, 202, 226);
+    color: white;
+}
+
+.ResetPasswordButton{
+    display: block;
+    text-align: center;
+    background-color: lightblue;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    width: 350px;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+
+.ResetPasswordButton:hover{
+    background-color: rgb(128, 202, 226);
+    color: white;
+}
+
+
+/* Register Page */
+
+.containerRegister{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: white;
+    max-width: 700px;
+    height: 600px;
+    border-radius: 5px;
+}
+
+
+.insideContainerRegister{
+    width: 380px;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+}
+
+.containerRegister h1{
+    text-align: center;
+    padding: 5px;
+}
+
+.containerRegister label{
+    display: block;
+}
+
+.containerRegister .input{
+    width: 350px;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 5px;
+    margin: 10px 0px;
+}
+
+/* Main Page */
+
+.containerMain{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 90%;
+    height: 900px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width:1000px) {
+    .containerMain{
+        height: 800px;
+    }
+}
+
+@media (max-height:900px) {
+    .containerMain{
+        height: 600px;
+    }
+}
+
+.containerMain h1{
+    display: block;
+    text-align: center;
+}
+
+.containerMain p{
+    display: block;
+    text-align: center;
+}
+
+.containerMain span{
+    color:lightblue;
+}
+
+.insideContainerMain hr{
+    margin: 120px 0px;
+}
+
+.insideContainerMain{
+    display: table;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    width: 800px;
+    height: 100px;
+}
+
+.insideContainerMain a{
+    display: inline-block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.insideContainerMain a:hover{
+    background-color: lightblue;
+    border-radius: 5px;
+    color: white; 
+}
+
+.insideContainerMain .madeby{
+    color: black;
+    display: inline;
+
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    background-color: transparent;
+    border-top: 1px solid black;
+    color: #FFF;
+    width: 100%;
+    height: 100px;    
+    text-align: center;
+    line-height: 100px;
+}
+
+footer span
+{
+    font-weight: 600;
+}
+
+footer .madeby{
+    color:black;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+/* Add social midias */
+
+.containerAddsocialmidias{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: white;
+    height: 500px;
+    max-width: 800px;
+    border-radius: 5px;
+}
+
+@media (max-height:900px) {
+    .containerAddsocialmidias{
+        height: 600px;
+    }
+}
+
+
+.containerAddsocialmidias h1{
+    text-align: center;
+    padding: 10px;
+}
+
+.insideContainerAddsocialmidias{
+    width: 380px;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+    
+}
+
+.insideContainerAddsocialmidias label{
+    display: block;
+    padding: 15px 0;
+}
+
+.insideContainerAddsocialmidias .input{
+    border: none;
+    border-bottom: 1px solid black;
+    width: 350px;
+}
+
+.insideContainerAddsocialmidias .submitButton{
+    display: block;
+    width: 350px;
+    margin: 10px 0px;
+    background-color: lightblue;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+
+/* Social Midias */
+
+.containerSocialmidias{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 90%;
+    height: 900px;
+    border-radius: 5px;
+}
+
+@media (max-height:900px) {
+    .containerSocialmidias{
+        height: 600px;
+    }
+}
+
+.containerSocialmidias li{
+    list-style: none;
+    margin: 10px;
+    padding: 15px;
+}
+
+.containerSocialmidias a{
+    text-decoration: none;
+    word-wrap: break-word;
+}
+
+.containerSocialmidias .buttonsFunction{
+    display: inline-block;
+    text-align: center;
+    background-color: lightblue;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    width: 100px;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+
+.containerSocialmidias .buttonsFunction:hover{
+    background-color: rgb(128, 202, 226);
+    color: white;
+}
+
+.containerSocialmidias .mainMenu{
+    display: inline-block;
+    text-align: center;
+    background-color: lightblue;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    width: 100px;
+    border-radius: 5px;
+    margin: 15px 60px;
+}
+
+.containerSocialmidias .mainMenu:hover{
+    background-color: rgb(128, 202, 226);
+    color: white;
+}
+
+
+/* Shared Profile */
+
+.containerSharedprofile{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 90%;
+    height: 900px;
+    border-radius: 5px;
+}
+
+@media (max-height:900px) {
+    .containerSharedprofile{
+        height: 600px;
+    }
+}
+
+.containerSharedprofile a{
+    word-wrap: break-word;
+    text-decoration: none;
+}
+
+.containerSharedprofile li{
+    list-style: none;
+    margin: 15px;
+    padding: 15px;
+}
+
+.containerSharedprofile .counter{
+    margin: 10px 60px;
+}
+
+.containerSharedprofile .mainMenu{
+    display: inline-block;
+    text-align: center;
+    background-color: lightblue;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    width: 100px;
+    border-radius: 5px;
+    margin: 15px 60px;
+}
+
+.containerSharedprofile .mainMenu:hover{
+    background-color: rgb(128, 202, 226);
+    color: white;
+}
+
+/* Qrcode Page */
+
+.containerQrcode
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 90%;
+    height: 900px;
+    border-radius: 5px;
+}
+
+@media (max-height:900px) {
+    .containerQrcode{
+        height: 600px;
+    }
+}
+
+.containerQrcode h2{
+    margin: 15px;
+}
+
+.containerQrcode h3{
+    margin: 15px;
+}
+.containerQrcode a{
+    text-decoration: none;
+    word-wrap: break-word;
+}
+
+.containerQrcode .da-code{
+    margin: 30px;
+}
+
+.containerQrcode .mainMenu{
+    display: inline-block;
+    text-align: center;
+    background-color: lightblue;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    width: 100px;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.containerQrcode .mainMenu:hover{
+    background-color: rgb(128, 202, 226);
+    color: white;
+}
+
+/* Delete Facebook */
+
+.containerDeletefacebook{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: white;
+    max-width: 400px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.containerDeletefacebook label{
+    text-align: center;
+    margin: 15px;
+}
+
+.containerDeletefacebook .urlFacebook{
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    display: block;
+    margin: 15px;
+    width: 300px;
+}
+
+.containerDeletefacebook .submitButtonFacebook{
+    display: block;
+    width: 300px;
+    margin: 15px;
+    background-color: lightblue;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.containerDeletefacebook .submitButtonFacebook:hover{
+    background-color: rgb(128, 202, 226);
+    color: white;
+}
+
+/* Update Facebook */
+
+.containerUpdatefacebook{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: white;
+    max-width: 400px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.containerUpdatefacebook label{
+    margin: 15px;
+    padding: 5px;
+}
+
+.containerUpdatefacebook .newValue{
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    display: block;
+    margin: 15px;
+    width: 300px;
+}
+
+.containerUpdatefacebook .submitButtonUpdateFacebook{
+    display: block;
+    width: 300px;
+    margin: 15px;
+    background-color: lightblue;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.containerUpdatefacebook .submitButtonUpdateFacebook:hover{
+    background-color: rgb(128, 202, 226);
+    color: white;
+}
+
+/* Delete Linkedin */
+
+
+.containerDeletelinkedin{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: white;
+    max-width: 400px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.containerDeletelinkedin label{
+    margin: 15px;
+    padding: 5px;
+}
+
+.containerDeletelinkedin .urlLinkedin{
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    display: block;
+    margin: 15px;
+    width: 300px;
+}
+
+.containerDeletelinkedin .submitButtonLinkedin{
+    display: block;
+    width: 300px;
+    margin: 15px;
+    background-color: lightblue;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.containerDeletelinkedin .submitButtonLinkedin:hover{
+    background-color: rgb(128, 202, 226);
+    color: white;
+}
+
+/* Update Linkedin */
+
+.containerUpdateLinkedin{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: white;
+    max-width: 400px;
+    height: 300px;
+    border-radius: 5px;
+}
+.containerUpdateLinkedin label{
+    margin: 15px;
+    padding: 5px;
+}
+
+.containerUpdateLinkedin .newValueLinkedin{
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    display: block;
+    margin: 15px;
+    width: 300px;
+}
+
+.containerUpdateLinkedin .submitButtonUpdateLinkedin{
+    display: block;
+    width: 300px;
+    margin: 15px;
+    background-color: lightblue;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.containerUpdateLinkedin .submitButtonUpdateLinkedin:hover{
+    background-color: rgb(128, 202, 226);
+    color: white;
+}
+
+/* Password Email */
+
+.containerResetPassword{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: white;
+    max-width: 500px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+
+.containerResetPassword label{
+    margin: 10px;
+    display: block;
+    text-align: center;
+}
+
+.containerResetPassword .emailInput{
+    margin: 10px;
+    display: block;
+    width: 300px;
+}
+
+.containerResetPassword .Submit{
+    display: block;
+    width: 300px;
+    margin: 10px;
+    background-color: lightblue;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.containerResetPassword .Submit:hover{
+    background-color: rgb(128, 202, 226);
+    color: white;
+}
+
+
+/* Enter New Password */
+
+.containerNewpassword{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: white;
+    max-width: 500px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.containerNewpassword label{
+    margin: 10px;
+    display: block;
+    text-align: center;
+}
+
+.containerNewpassword #password1{
+    margin: 10px;
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid black;
+    display: block;
+}
+
+
+
+.containerNewpassword #password2{
+    margin: 10px;
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid black;
+    display: block;
+}
+
+.containerNewpassword #submit{
+    display: block;
+    width: 300px;
+    margin: 10px;
+    background-color: lightblue;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.containerNewpassword #submit:hover{
+    background-color: rgb(128, 202, 226);
+    color: white;
+}
+
+
+
+

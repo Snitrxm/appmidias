@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %} Update Linkedin {% endblock %}
+
+{% block content %}
+
+
+<div class="containerUpdateLinkedin">
+  <form action="" method="post">
+      {% include 'components/notification.html' %}
+      {{form.csrf_token}}
+      <label for="">Please enter the new value</label>
+      {{form.new(class_='newValueLinkedin')}}
+      {{form.submit(class_='submitButtonUpdateLinkedin')}}
+  
+    </form>
+</div>
+
+
+{% endblock %}

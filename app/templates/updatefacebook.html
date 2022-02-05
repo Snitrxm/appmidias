@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %} Update Facebook {% endblock %}
+
+{% block content %}
+
+
+<div class="containerUpdatefacebook">
+  <form action="" method="post">
+      {% include 'components/notification.html' %}
+      {{form.csrf_token}}
+      <label for="">Please enter the new value</label>
+      {{form.new(class_='newValue')}}
+      {{form.submit(class_='submitButtonUpdateFacebook')}}
+    </form>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %} Share Your Profile {% endblock %}
+
+{% block content %}
+
+<div class="containerQrcode">
+    <div id="qrcode" class="da-code"></div>
+    
+    <h2>You can show the QRCode or the link: </h2>
+    <h3><a href="https://appmidias.herokuapp.com/sharedprofile/{{user.username}}">https://appmidias.herokuapp.com/sharedprofile/{{user.username}}</a></h3>
+    <a class='mainMenu' href="{{url_for('main')}}">Main Menu</a>
+</div>
+
+
+<script>
+    var user_name = '{{user.username}}'
+    new QRCode(document.getElementById('qrcode'), {
+        text:`https://appmidias.herokuapp.com/sharedprofile/${user_name}`
+    })
+</script>
+{% endblock%}

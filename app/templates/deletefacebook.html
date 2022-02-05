@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %} Delete Facebook {% endblock %}
+
+{% block content %}
+
+
+<div class="containerDeletefacebook">
+  <form action="" method="post">
+      {% include 'components/notification.html' %}
+      {{form.csrf_token}}
+      <label for="">Please enter your facebook url to confirm </label>
+      {{form.url(class_='urlFacebook')}}
+      {{form.submit(class_='submitButtonFacebook')}}
+    </form>
+</div>
+
+
+{% endblock %}

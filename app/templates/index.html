@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %} Index {% endblock %}
+
+{% block content %}
+
+
+
+<div class="containerIndex">
+    <h1>Welcome to our Application</h1>
+
+    <div class="insideContainerIndex">
+        <a href="{{url_for('auth.register')}}">Create your profile</a>
+        
+        <h3>Already have an account ?</h3>
+        <a href="{{url_for('auth.login')}}">Login</a>
+    </div>
+</div>
+
+{% endblock %}

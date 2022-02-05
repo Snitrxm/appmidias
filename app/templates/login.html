@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %} Login {% endblock %}
+
+{% block content %}
+
+
+<div class="containerLogin">
+  <form action="" method="post">
+    {% include 'components/notification.html' %}
+    {{form.csrf_token}}
+    <h1 id="loginTitle">Login</h1>
+      <div class="insideContainerLogin">
+        <label for="exampleInputEmail1" class="form-label">E-mail</label>
+        {{form.email(class_="input")}}
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        {{form.password(class_="input")}}
+        {{form.submit(class_='submitButton')}}
+        <a class ="registerButton" href="{{url_for('auth.register')}}">Register</a>
+        <a class = 'ResetPasswordButton' href="{{url_for('resetpassword')}}">Reset Password</a>
+      </div>
+  </form>
+  
+  
+</div>
+
+
+{% endblock %}
